@@ -1,3 +1,217 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: tomato;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+}
+/* header */
+header{
+    /* border: 1px solid red; */
+    background-color: rgb(0, 0, 0, 0.3);
+    /* height: 90px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
+.header-container{
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 1088px; /*tu zmienna*/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header-logo{
+    display: flex;
+    gap: 10px;
+}
+.header-text{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+.header-text span{
+    color: #FF0000;
+    padding-right: 5px;
+}
+.header-logo-img{
+    width: 31px;
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    color: #FFFFFF;
+    text-transform: uppercase; /*globalene ustawienia dla linków  zrobić*/
+    font-size: 16px;
+    font-weight: 700; /*bold- 700*/
+    text-decoration: none;
+    padding: 33px ;
+    position: relative;
+    z-index: 1;
+}
+.nav-link:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* container top */
+.hero{
+    /* width: 100vw; */
+    height: calc(100vh - 55px * 0.5);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/Image.png");
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.hero-title{
+    font-size: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+.hero-text{
+    font-size: 16px;
+    color: #ffffff;
+    width: 1046px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+.hero-buttons-wrapper{
+    display: flex;
+    gap: 25px;
+    margin-top: 54px;
+}
+.hero-btn{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 22px 55px;
+    background-color: #FF0000;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+.hero-btn:nth-child(2){
+    background-color: white;
+    color: red;
+}
+.hero-circle{
+    width: 55px;
+    height: 55px;
+    background-color: #FF0000;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transform: translate( -50% , 50%);
+}
+
+.blog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.blog-title{
+    /* border: 2px solid red; */
+    margin-top: 90px;
+    font-size: 32px;
+    font-weight: 700;
+   
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.blog-title::before{
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #FF0000;
+    
+    display: inline-block;
+}
+.blog-title::after{
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #FF0000;
+    
+    display: inline-block;
+}
+.article{
+    width: 352px;
+    height: 440px;
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-articles-wrapper{
+    width: 1088px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.article-title{
+    font-size: 19px;
+    color: #6A6A6A;  
+}
+.article-text{
+    font-size: 14px;
+    color: #6A6A6A;
+}
+.article-btn{
+    padding: 10px 30px;
+    color: white;
+    background-color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 40px;
+    align-self: flex-start;
+    box-shadow: 0px 3px 6px #FF00004D;
 }

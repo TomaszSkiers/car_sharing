@@ -21,18 +21,17 @@
                 <p class="header-text"><span>car</span>sharing</p>
             </div>
             
-
             <nav>
-                <a class="nav-link" href="#">home</a>
-                <a class="nav-link" href="#">blog</a>
-                <a class="nav-link" href="#">service</a>
-                <a class="nav-link" href="#">contact</a>
+                <a class="nav-link" href="#hero">home</a>
+                <a class="nav-link" href="#blog">blog</a>
+                <a class="nav-link" href="#service">service</a>
+                <a class="nav-link" href="#contact">contact</a>
             </nav>
         </div>
         
     </header>
 
-    <div class="hero">
+    <div class="hero" id="hero">
         <h1 class="hero-title">car sharing</h1>
         <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
         <div class="hero-buttons-wrapper">
@@ -45,7 +44,7 @@
         </div>
     </div>
     
-    <section class="blog">
+    <section class="blog" id="blog">
         <h2 class="blog-title">blog</h2>
 
         <div class="blog-articles-wrapper">
@@ -70,12 +69,83 @@
         </div>
     </section>
 
-    <section class="service">
-        <h2 class="blog-title">service</h2>
+    <section class="service" id="service">
+        <h2 class="blog-title srv-title">service</h2>
+        <div class="service-wrapper">
+            <div class="service-article">
+                <img src="./images/mini1.png" alt="">
+                <h2 class="service-title">LOREM IPSUM SIT DOLOR</h2>
+                <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="service-btn" href="#">read more</a>
+            </div>
+            <div class="service-article">
+                <img src="./images/mini2.png" alt="">
+                <h2 class="service-title">LOREM IPSUM SIT DOLOR</h2>
+                <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="service-btn" href="#">read more</a>
+            </div>
+            <div class="service-article">
+                <img src="./images/mini3.png" alt="">
+                <h2 class="service-title">LOREM IPSUM SIT DOLOR</h2>
+                <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="service-btn" href="#">read more</a>
+            </div>
+            <div class="service-article">
+                <img src="./images/mini4.png" alt="">
+                <h2 class="service-title">LOREM IPSUM SIT DOLOR</h2>
+                <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="service-btn" href="#">read more</a>
+            </div>
+        </div>
     </section>
 
-     
-    
+    <section class="contact" id="contact">
+        <h2 class="blog-title contact-title">contact</h2>
+        <div class="wrapper-contact">
+            <img class="contact-img" src="./images/Form Photo.png " alt="">
+            <div class="inputs-wrapper">
+                <input type="text" name="" id="" placeholder="type your name">
+                <input type="email" placeholder="type your email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="type your message"></textarea>
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="customCheck" />
+                    <label for="customCheck">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+                </div>
+                <input type="submit" value="send">
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo-container">
+                <img class="footer-logo-img" src="./images/Logo Footer.svg" >
+                <span>car</span>
+                <span>sharing</span>
+            </div>
+            <div class="footer-links-wrapper">
+                <div class="footer-links-container">
+                    <a href="#">home page</a>
+                    <a href="#">about us</a>
+                    <a href="#">gallery</a>
+                    <a href="#">share regulations</a>
+                </div>
+                <div class="footer-links-container">
+                    <a href="#">price</a>
+                    <a href="#">our fleet</a>
+                    <a href="#">our clients</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="footer-copyright-container">
+                    Copyright © Coders Lab
+                </div>
+            </div>
+        </div>
+    
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            <img class="scroll-btn" src="./images/Icon Arrow Down.svg" alt="">
+        </button>
+
+        <script src="script.js"></script>
 </body>
 </html>
